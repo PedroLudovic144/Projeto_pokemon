@@ -77,6 +77,11 @@ $(document).ready(function() {
                            </div>`);
 
         detailsContainer.empty().append(details);
+
+        // Adiciona a rolagem para o topo da página
+        $('html, body').animate({
+            scrollTop: 0
+        }, 'fast');
     }
 
     function addToTeam(pokemon) {
